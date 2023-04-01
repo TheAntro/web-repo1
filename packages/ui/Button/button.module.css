@@ -1,0 +1,46 @@
+@value theme: "../theme.css";
+@value violet from theme;
+
+.btn {
+  color: white;
+  border: 2px solid white;
+  padding: 20px 50px;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+
+.btn-violet {
+  background-color: violet;
+}
+
+.btn-violet:after {
+  content: '';
+  position: absolute;
+  background-color: violet;
+  top: 8px;
+  left: 8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1;
+}
+
+.btn-violet:hover {
+  background-color: white;
+  border-color: violet;
+  color: violet;
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  top: 8px;
+  left: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-violet:active:after {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
