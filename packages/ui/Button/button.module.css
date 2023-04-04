@@ -1,12 +1,16 @@
 @value theme: "../theme.css";
 @value violet from theme;
+@value bradius from theme;
 
 .btn {
   color: white;
+  font-family: inherit;
+  border-radius: bradius;
+  margin: 8px 12px 12px 8px;
   border: 2px solid white;
-  padding: 20px 50px;
+  padding: 16px 24px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   position: relative;
 }
 
@@ -16,6 +20,7 @@
 
 .btn-violet:after {
   content: '';
+  border-radius: bradius;
   position: absolute;
   background-color: violet;
   top: 8px;
