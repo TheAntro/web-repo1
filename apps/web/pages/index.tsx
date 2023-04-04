@@ -1,6 +1,6 @@
 import { Button, Paper } from 'ui';
 
-export default function Web() {
+export default function FrontPage() {
   return (
     <div>
       <h1>Web</h1>
